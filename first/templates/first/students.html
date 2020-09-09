@@ -1,0 +1,27 @@
+{% extends "first/layout.html" %}  
+
+
+{% block title %}  
+<title>타이틀 타이틀</title>
+{% endblock %}
+
+
+
+{% block content %}
+<h3>내용내용</h3>
+{% for student in students %}
+<div>
+    <span>{{student.name}}</span>
+    <span>{{student.address}}</span>
+    <span>{{student.email}}
+</div>
+
+{% endfor %}
+{% endblock %}
+
+
+
+
+
+
+
